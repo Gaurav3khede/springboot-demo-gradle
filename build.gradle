@@ -19,13 +19,15 @@ sonarqube {
     properties {
         property 'sonar.projectName', 'Java :: Sample2'
         property 'sonar.projectKey', 'org.sonarqube:JacocoCodeCoverage'
-        property 'sonar.jacoco.reportPath', '${project.buildDir}/jacoco/test.exec'
+       // property 'sonar.jacoco.reportPath', '${project.buildDir}/jacoco/test.exec'
         //property 'sonar.login', '80d2fa335d844e9a3d83ac2d88a0bf22376d008d'
       //  property 'sonar.login', 'admin'
        // property 'sonar.password', 'admin'
         //git token NjYzNzY5NTE0OTU3Ojy4c/YLV2smiXK+log6Dwcnak3V
     }
 }
+
+
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
@@ -66,3 +68,12 @@ dependencies {
     testCompile group: 'com.h2database', name: 'h2', version: '1.4.196'
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
+
+jacocoTestReport {
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
+}
+
+test.finalizedBy jacocoTestReport

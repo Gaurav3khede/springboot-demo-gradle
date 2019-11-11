@@ -17,12 +17,12 @@ plugins {
 
 sonarqube {
     properties {
-        property 'sonar.projectName', 'Java :: Sample1'
+        property 'sonar.projectName', 'Java :: Sample2'
         property 'sonar.projectKey', 'org.sonarqube:JacocoCodeCoverage'
         property 'sonar.jacoco.reportPath', '${project.buildDir}/jacoco/test.exec'
         //property 'sonar.login', '80d2fa335d844e9a3d83ac2d88a0bf22376d008d'
-        property 'sonar.login', 'admin'
-        property 'sonar.password', 'admin'
+      //  property 'sonar.login', 'admin'
+       // property 'sonar.password', 'admin'
         //git token NjYzNzY5NTE0OTU3Ojy4c/YLV2smiXK+log6Dwcnak3V
     }
 }

@@ -77,4 +77,3 @@ jacocoTestReport {
 }
 
 test.finalizedBy jacocoTestReport
-jacocoTestReport.finalizedBy sonarqube

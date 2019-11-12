@@ -17,7 +17,7 @@ plugins {
 
 sonarqube {
     properties {
-        property 'sonar.projectName', 'Java :: Sample3'
+        property 'sonar.projectName', 'Java :: Sample4'
         property 'sonar.projectKey', 'org.sonarqube:JacocoCodeCoverage1'
        // property 'sonar.jacoco.reportPath', '${project.buildDir}/jacoco/test.exec'
         //property 'sonar.login', '80d2fa335d844e9a3d83ac2d88a0bf22376d008d'
